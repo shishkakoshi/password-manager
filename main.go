@@ -173,7 +173,7 @@ func main() {
 			fmt.Fprintf(os.Stderr, "ошибка инициализации: %v\n", err)
 			os.Exit(1)
 		}
-		fmt.Println("хранилище успешно создано!")
+		fmt.Println("хранилище успешно создано")
 	} else {
 		data, err := pm.storage.Load()
 		if err != nil {
@@ -182,10 +182,10 @@ func main() {
 		}
 
 		if !crypto.VerifyMasterPassword(masterPassword, data.MasterHash, data.MasterSalt) {
-			fmt.Println("неверный мастер-пароль!")
+			fmt.Println("неверный мастер-пароль")
 			os.Exit(1)
 		}
-		fmt.Println("доступ разрешен!")
+		fmt.Println("доступ разрешен")
 	}
 
 	scanner := bufio.NewScanner(os.Stdin)
