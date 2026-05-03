@@ -8,5 +8,6 @@ require (
 	golang.org/x/term v0.42.0
 )
 
-//github.com/akavel/rsrc v0.10.2 // indirect
-require golang.org/x/sys v0.43.0 // indirect
+require (
+	golang.org/x/sys v0.43.0 // indirect
+)
